@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.user-name-prompt {
+  text-align: center;
+  background: rgb(20,22,24);
+  color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Lexend', sans-serif;
+
+}
+
+.user-name-prompt input {
+  padding: 10px;
+  outline: 0;
+  border: 0px;
+  border-radius: 5px;
+  margin: 0px 10px 0px 0px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.user-name-prompt button {
+  padding: 10px 16px;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  font-family: 'Lexend', sans-serif;
+  background: rgb(53,142,243);
+  color: #fefefe;
+  cursor: pointer;
+}
+
+.user-name-prompt button:hover{
+  border: 1px solid #fefefe;
+  background: transparent;
+}
+
+.error {
+  color: red;
+}
+.chat-room {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100vh;
+  /* border: 1px solid #ddd; */
+  background: rgb(20,22,24);
+  font-family: 'Lexend', sans-serif;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  border-bottom: 1px solid rgb(111,113,115);
+  /* background-color: #fff; */
+  background: rgb(20,22,24);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.back-btn,
+.options-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(111,113,115);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  /* margin: 0; */
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(53,142,243);;
+}
+
+.online-status {
+  font-size: 14px;
+  color: rgb(111,113,115);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.online-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #4caf50;
+  border-radius: 50%;
+}
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* General message styling */
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 12px;
+  word-wrap: break-word;
+}
+
+/* Sent messages styling */
+.chat-message.sent {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Received messages styling */
+.chat-message.received {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+  color: #000000;
+}
+
+/* Message content spacing */
+.message-user {
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.message-text {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.message-timestamp {
+  font-size: 0.8rem;
+  color: #6f7173;
+  text-align: right;
+}
+
+/* Chat input form */
+.chat-input-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.chat-input-form input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  background: transparent;
+  color: #ffffff;
+  outline: 0px;
+  font-family: 'Lexend', sans-serif;
+}
+
+.chat-input-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.chat-space {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  background: rgb(20,22,24);
+  color: #ffffff;
+}
+
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.history-button{
+  background: none;
+  border: 0px;
+  font-weight: 500;
+  width: fit-content;
+  font-family: 'Lexend', sans-serif;
+  font-size: 13.5px;
+  text-align: center;
+  margin: 0 auto;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
